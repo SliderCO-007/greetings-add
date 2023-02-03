@@ -82,4 +82,5 @@ jobs:
        shell: bash
        run: |
          chmod +x ./test-script.sh
+         ls -l build/libs/greetings*
          ./test-script.sh ${{ needs.build.outputs.artifact-path }} ${{ github.event.inputs.myValues }}
